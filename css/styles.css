@@ -3,11 +3,6 @@ body
     animation: 0.75s transitIn;
     overflow-x: hidden;
 }
-.navbar-brand
-{
-    font-family: 'Anton', sans-serif;
-    font-size: 150%;
-}
 .font-anton
 {
     font-family: 'Anton', sans-serif;
@@ -17,26 +12,37 @@ body
 {
     font-family: 'Montserrat', sans-serif;
 }
+.bg-glass
+{
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+}
+.bg-glass1
+{
+    backdrop-filter: blur(5px);
+}
+
+/* navbar */
+.navbar-brand
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 150%;
+}
+/* navbar */
+
+
+/* footer */
+
 footer
 {
-   
     background-size: 80%;
     z-index: -1;
     background-repeat: no-repeat;
     background-position-y: 0;
 }
-footer .container
+.bg-glass > .container > .row > .col-md-8
 {
-    background-color: transparent;
-    backdrop-filter: blur(4px);
-}
-footer > .container > .row > .col-md-8{
     border-right: 1px solid black;
-}
-.bg-glass
-{
-    background-color: rgba(255,255,255,0.2);
-    backdrop-filter: blur(20px);
 }
 .social-icons
 {
@@ -46,27 +52,37 @@ footer > .container > .row > .col-md-8{
     border-radius: 7px;
     transition: 0.5s;
 }
-.social-icons:hover{
+.social-icons:hover
+{
     background-color: black;
     color: white;
     box-shadow: 0 0 0 3px gray;
 }
+
+/* footer */
+
+/* 1st section */
+
 .mar
 {
     padding-top: 14%;
     padding-bottom: 13%;
 }
-.rounded-circle{
+.rounded-circle
+{
     transition: 1s;
 }
 .rounded-circle:hover
 {
     box-shadow: 0 0 20px 10px gray ;
 }
-#basic
-{
-    overflow: hidden;
-}
+
+/* 1st section */
+
+
+
+/* svg */
+
 .svgn 
 {
     position:absolute;
@@ -81,18 +97,6 @@ footer > .container > .row > .col-md-8{
     width: 100%;
     height: 100%;
 }
-.svgn1{
-    position:absolute;
-    z-index: 0;
-    overflow: hidden;
-    display: flex;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
 .svgn svg{
     
     position: absolute;
@@ -104,118 +108,95 @@ footer > .container > .row > .col-md-8{
     overflow: hidden;
 }
 
-.svgn1 svg{
-    
-    position: absolute;
-    transform: rotateZ(180deg);
-    
-    bottom: -300px;
-    left: 0px;
-    width: 60rem;
-    height: 60rem;
-    overflow: hidden;
-}
 
-
-#v1
+.svgn svg path:nth-child(1)
 {
     animation:  gg 2.5s infinite alternate ;
 }
-#v2
+.svgn svg path:nth-child(2)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 200ms;
 }
-        #v3
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 400ms;
-        }
-        #v4
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 600ms;
-        }
-        #v5
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 800ms;
-        }
-        #v6
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 1000ms;
-        }
-        #v7
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 1000ms;
-        }
-        #v8
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 1200ms;
-        }
-        #v9
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 1400ms;
-        }
-        #v10
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 1600ms;
-        }
-        #v11
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 1800ms;
-        }
-        #v12
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 2000ms;
-        }
-        #v13
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 2200ms;
-        }
-        #v14
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 2400ms;
-        }
-        #v15
-        {
-            animation:  gg 2.5s infinite alternate ;
-            animation-delay: 2600ms;
-        }
+.svgn svg path:nth-child(3)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 400ms;
+}
+.svgn svg path:nth-child(4)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 600ms;
+}
+.svgn svg path:nth-child(5)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 800ms;
+}
+.svgn svg path:nth-child(6)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 1000ms;
+}
+.svgn svg path:nth-child(7)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 1000ms;
+}
+.svgn svg path:nth-child(8)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 1200ms;
+}
+.svgn svg path:nth-child(9)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 1400ms;
+}
+.svgn svg path:nth-child(10)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 1600ms;
+}
+.svgn svg path:nth-child(11)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 1800ms;
+}
+.svgn svg path:nth-child(12)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 2000ms;
+}
+.svgn svg path:nth-child(13)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 2200ms;
+}
+.svgn svg path:nth-child(14)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 2400ms;
+}
+.svgn svg path:nth-child(15)
+{
+    animation:  gg 2.5s infinite alternate ;
+    animation-delay: 2600ms;
+}
+/* svg */
 
-@keyframes gg{
-    from{
+/* Animation */
+
+@keyframes gg
+{
+    from
+    {
         transform: scale(1,1) translate(0,0) rotateY(0);
     }
     to{
         transform:scale(0.90,0.90) translate(2%,2%) rotateY(10deg);  
     } 
 }
-
-@keyframes rotate {
-    0%{
-        transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    25%{
-        transform: rotateX(30deg) rotateY(10deg) rotateZ(10deg);
-    }
-    50%{
-        transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    75%{
-        transform: rotateX(30deg) rotateY(-10deg) rotateZ(-10deg);
-    }
-}
-
 @keyframes transitIn {
    from
    {
@@ -240,3 +221,6 @@ footer > .container > .row > .col-md-8{
          transform: scale(1,1);
     }
  }
+
+/* Animation */
+
