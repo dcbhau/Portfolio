@@ -2,6 +2,7 @@ body
 {
     animation: 0.75s transitIn;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 .font-anton
 {
@@ -20,6 +21,27 @@ body
 .bg-glass1
 {
     backdrop-filter: blur(5px);
+}
+.bg-gray
+{
+    background-color: whitesmoke;
+}
+.heading
+{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+.heading::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    bottom:-10px;
+    left: 50%;
+    transform: translate(-50%,0%);
+   
 }
 
 /* navbar */
@@ -40,7 +62,7 @@ footer
     background-repeat: no-repeat;
     background-position-y: 0;
 }
-.bg-glass > .container > .row > .col-md-8
+.bg-glass1 > .container > .row > .col-md-8
 {
     border-right: 1px solid black;
 }
@@ -61,24 +83,64 @@ footer
 
 /* footer */
 
+
 /* 1st section */
 
+#p1_right,#p3_right,#p1_left,#p1_mouth,#p2_mouth,#p1_eye,#p3_mouth
+{
+    transform-origin: center;   
+    transform-box: fill-box;
+}
+#p1_right,#p3_right
+{
+    animation: wave 2s infinite alternate;
+}
+#p1_left
+{
+    animation: wave2 2s infinite alternate-reverse;
+}
+#p1_mouth,#p2_mouth
+{
+    animation: mouth 2s infinite alternate;
+}
+#p1_eye,#p3_mouth
+{
+    animation:eye 2s infinite alternate;
+}
+#p2_eye
+{
+    animation:eye2 2s infinite alternate;
+    transform-box: fill-box;
+}
+#flower1,#flower2
+{
+    animation:plant 5s infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center; 
+}
+
+/* 1st section */
+
+/* 2nd section */
 .mar
 {
-    padding-top: 14%;
-    padding-bottom: 13%;
+    padding-top: 9%;
+    padding-bottom: 4%;
 }
-.rounded-circle
+.rounded
 {
+    width: 80%;
     transition: 1s;
 }
-.rounded-circle:hover
+.rounded:hover
 {
-    box-shadow: 0 0 20px 10px gray ;
+    box-shadow: 0 0 10px 2px gray ;
+}
+row {
+    justify-content: center;
 }
 
-/* 1st section */
-
+/* 2nd section */
 
 
 /* svg */
@@ -105,9 +167,13 @@ footer
     right: -380px;
     width: 60rem;
     height: 60rem;
+    opacity: 0.6;
     overflow: hidden;
 }
-
+#svgn1
+{
+    width: 110%;
+}
 
 .svgn svg path:nth-child(1)
 {
@@ -183,7 +249,44 @@ footer
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 2600ms;
 }
+
+#name{
+    animation:fill 0.4s ease forwards 2s;
+}
+#name path:nth-child(1)
+{
+    stroke-dasharray: 208.8270721435547px;
+    stroke-dashoffset: 208.8270721435547px;
+    animation: line-anim 2s ease forwards;
+}
+#name path:nth-child(2)
+{
+    stroke-dasharray: 184.31997680664062px;
+    stroke-dashoffset: 184.31997680664062px;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+#name path:nth-child(3)
+{
+    stroke-dasharray: 202.65029907226562px;
+    stroke-dashoffset: 202.65029907226562px ;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+#name path:nth-child(4)
+{
+    stroke-dasharray: 165.0831298828125px;
+    stroke-dashoffset: 165.0831298828125px ;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+#name path:nth-child(5)
+{
+    stroke-dasharray: 148px;
+    stroke-dashoffset: 148px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
 /* svg */
+
+
+
 
 /* Animation */
 
@@ -209,7 +312,8 @@ footer
         transform: translateY(0);
    }
 }
-@keyframes animateIn{
+@keyframes animateIn
+{
     from
     {
          opacity: 0;
@@ -217,10 +321,82 @@ footer
     }
     to
     {
-        opacity: 1;
+        opacity: 0.5;
          transform: scale(1,1);
     }
  }
+
+ @keyframes wave
+ {
+    from
+    {
+        transform: rotateZ(0) ;
+    }
+    to
+    {
+        transform: rotateZ(-40deg);
+    }
+ }
+ @keyframes wave2
+ {
+    from
+    {
+        transform: translateY(0);
+    }
+    to
+    {
+        transform: translateY(90%);
+    }
+ }
+ @keyframes mouth
+ {
+     from{
+        transform: scale(1,1);
+     }
+     to{
+        transform: scale(1.2,1.2);
+     }
+ }
+ @keyframes eye
+ {
+    from{
+        transform: rotateX(0);
+     }
+     to{
+        transform: rotateX(360deg);
+     }
+ }
+ @keyframes eye2
+ {
+    from{
+        transform: rotateZ(0);
+     }
+     to{
+        transform: rotateZ(30deg);
+     }
+ }
+ @keyframes plant
+ {
+    from{
+        transform: rotateZ(0) translate(0,0);
+     }
+     to{
+        transform: rotateZ(-7deg) translate(10%,-20%);
+     }
+ }
+ @keyframes line-anim {
+    to{
+        
+        stroke-dasharray: 0px;
+        stroke-dashoffset:0px;
+    }
+}
+@keyframes fill {
+    to{
+        fill: black;
+    }
+}
+
 
 /* Animation */
 
