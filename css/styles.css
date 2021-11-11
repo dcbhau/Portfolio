@@ -144,7 +144,21 @@ row {
 
 
 /* svg */
-
+.ss
+{
+    position: relative;
+}
+.svgn1
+{
+    position:relative;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    left: 3px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
 .svgn 
 {
     position:absolute;
@@ -172,7 +186,7 @@ row {
 }
 #svgn1
 {
-    width: 110%;
+    width: 100%;
 }
 
 .svgn svg path:nth-child(1)
