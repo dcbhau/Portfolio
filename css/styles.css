@@ -31,17 +31,21 @@ body
     position: relative;
     text-align: center;
     font-weight: bold;
+    text-shadow: 0 1px 2px gray;
 }
 .heading::after{
     position: absolute;
     content: "";
     width: 100px;
+    box-shadow: 0 1px 2px gray;
     height: 5px;
     background-color: black;
     bottom:-10px;
     left: 50%;
     transform: translate(-50%,0%);
-   
+}
+.row{
+    overflow-x: hidden;
 }
 
 /* navbar */
@@ -114,7 +118,7 @@ footer
 }
 #flower1,#flower2
 {
-    animation:plant 5s infinite alternate;
+    animation:plant 5s infinite alternate ease;
     transform-box: fill-box;
     transform-origin: center; 
 }
@@ -127,6 +131,11 @@ footer
     padding-top: 9%;
     padding-bottom: 4%;
 }
+.space
+{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
 .rounded
 {
     width: 80%;
@@ -136,8 +145,24 @@ footer
 {
     box-shadow: 0 0 10px 2px gray ;
 }
-row {
-    justify-content: center;
+.skill-bar
+{
+    height: 30px;
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+.skill-per
+{
+    width: 0%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: black;
+    position: relative;
+    color: white;
+    font-size: small;
+    text-align: center;
+    line-height: 30px;
 }
 
 /* 2nd section */
@@ -298,8 +323,6 @@ row {
     animation: line-anim 2s ease forwards 1.2s;
 }
 /* svg */
-
-
 
 
 /* Animation */
