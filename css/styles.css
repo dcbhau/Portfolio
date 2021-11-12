@@ -90,12 +90,12 @@ footer
 
 /* 1st section */
 
-#p1_right,#p3_right,#p1_left,#p1_mouth,#p2_mouth,#p1_eye,#p3_mouth
+#p1_right,#p3_right,#p1_left,#p1_mouth,#p2_mouth,#p1_eye,#p3_mouth,#hand,#mouth1,#mouth2
 {
     transform-origin: center;   
     transform-box: fill-box;
 }
-#p1_right,#p3_right
+#p1_right,#p3_right,#hand
 {
     animation: wave 2s infinite alternate;
 }
@@ -103,11 +103,11 @@ footer
 {
     animation: wave2 2s infinite alternate-reverse;
 }
-#p1_mouth,#p2_mouth
+#p1_mouth,#p2_mouth,#mouth1
 {
     animation: mouth 2s infinite alternate;
 }
-#p1_eye,#p3_mouth
+#p1_eye,#p3_mouth,#mouth2
 {
     animation:eye 2s infinite alternate;
 }
@@ -133,8 +133,8 @@ footer
 }
 .space
 {
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .rounded
 {
@@ -166,6 +166,33 @@ footer
 }
 
 /* 2nd section */
+
+#edu_svg
+{
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#edu_svg svg
+{
+    
+    width: 50%;
+}
+
+.tab-header
+{
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 4px;
+    padding: 3px 0 3px 7px;
+}
+dl dd{
+    display: inline-block;
+}
+dl dt{
+    display: block;
+}
 
 
 /* svg */
@@ -217,76 +244,105 @@ footer
 .svgn svg path:nth-child(1)
 {
     animation:  gg 2.5s infinite alternate ;
+    -webkit-animation: gg 2.5s infinite alternate ;
 }
 .svgn svg path:nth-child(2)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 200ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 200ms ;
 }
 .svgn svg path:nth-child(3)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 400ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 400ms ;
 }
 .svgn svg path:nth-child(4)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 600ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 600ms ;
 }
 .svgn svg path:nth-child(5)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 800ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 800ms ;
 }
 .svgn svg path:nth-child(6)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 1000ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 1000ms ;
 }
 .svgn svg path:nth-child(7)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 1000ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 1000ms ;
 }
 .svgn svg path:nth-child(8)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 1200ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 1200ms ;
 }
 .svgn svg path:nth-child(9)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 1400ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 1400ms ;
 }
 .svgn svg path:nth-child(10)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 1600ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 1600ms ;
 }
 .svgn svg path:nth-child(11)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 1800ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 1800ms ;
 }
 .svgn svg path:nth-child(12)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 2000ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 2000ms ;
 }
 .svgn svg path:nth-child(13)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 2200ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 2200ms ;
 }
 .svgn svg path:nth-child(14)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 2400ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 2400ms ;
 }
 .svgn svg path:nth-child(15)
 {
     animation:  gg 2.5s infinite alternate ;
     animation-delay: 2600ms;
+    -webkit-animation: gg 2.5s infinite alternate ;
+    -webkit-animation-delay: 2600ms ;
 }
 
 #name{
@@ -331,9 +387,11 @@ footer
     from
     {
         transform: scale(1,1) translate(0,0) rotateY(0);
+        -webkit-transform:scale(1,1) translate(0,0) rotateY(0) ;
     }
     to{
         transform:scale(0.90,0.90) translate(2%,2%) rotateY(10deg);  
+        -webkit-transform:scale(0.90,0.90) translate(2%,2%) rotateY(10deg) ;
     } 
 }
 @keyframes transitIn {
