@@ -1,522 +1,470 @@
-body
-{
-    animation: 0.75s transitIn;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    transition: 1s;
+body {
+  animation: 0.75s transitIn;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  transition: 1s;
 }
-.font-anton
-{
-    font-family: 'Anton', sans-serif;
-    color: black;
+.font-anton {
+  font-family: "Anton", sans-serif;
+  color: black;
 }
-.font-monte
-{
-    font-family: 'Montserrat', sans-serif;
+.font-monte {
+  font-family: "Montserrat", sans-serif;
 }
-.bg-glass
-{
-    background-color: rgba(255,255,255,0.2);
-    backdrop-filter: blur(20px);
+.bg-glass {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
 }
-.bg-glass1
-{
-    backdrop-filter: blur(5px);
+.bg-glass1 {
+  backdrop-filter: blur(5px);
 }
-.bg-gray
-{
-    background-color: whitesmoke;
+.bg-gray {
+  background-color: whitesmoke;
 }
-.heading
-{
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 1px 2px gray;
+.heading {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 1px 2px gray;
 }
-.heading::after{
-    position: absolute;
-    content: "";
-    width: 100px;
-    box-shadow: 0 1px 2px gray;
-    height: 5px;
-    background-color: black;
-    bottom:-10px;
-    left: 50%;
-    transform: translate(-50%,0%);
+.heading::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  box-shadow: 0 1px 2px gray;
+  height: 5px;
+  background-color: black;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
-
 
 /* navbar */
-.navbar-brand
-{
-    font-family: 'Anton', sans-serif;
-    font-size: 150%;
+.navbar-brand {
+  font-family: "Anton", sans-serif;
+  font-size: 150%;
 }
 /* navbar */
 
-
 /* footer */
 
-footer
-{
-    background-size: 80%;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-position-y: 0;
-    border-top:1px solid black;
+footer {
+  background-size: 80%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  border-top: 1px solid black;
 }
-.bg-glass1 > .container > .row > .col-md-8
-{
-    border-right: 1px solid black;
+.bg-glass1 > .container > .row > .col-md-8 {
+  border-right: 1px solid black;
 }
-.social-icons
-{
-    color: black;
-    padding: 4px 4px 4px;
-    border: 1.2px solid black;
-    border-radius: 7px;
-    transition: 0.5s;
+.social-icons {
+  color: black;
+  padding: 4px 4px 4px;
+  border: 1.2px solid black;
+  border-radius: 7px;
+  transition: 0.5s;
 }
-.social-icons:hover
-{
-    background-color: black;
-    color: white;
-    box-shadow: 0 0 0 3px gray;
+.social-icons:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 0 3px gray;
 }
 
 /* footer */
-
 
 /* 1st section */
 
-#p1_right,#p3_right,#p1_left,#p1_mouth,#p2_mouth,#p1_eye,#p3_mouth,#hand,#mouth1,#mouth2
-{
-    transform-origin: center;   
-    transform-box: fill-box;
+#p1_right,
+#p3_right,
+#p1_left,
+#p1_mouth,
+#p2_mouth,
+#p1_eye,
+#p3_mouth,
+#hand,
+#mouth1,
+#mouth2 {
+  transform-origin: center;
+  transform-box: fill-box;
 }
-#p1_right,#p3_right,#hand
-{
-    animation: wave 2s infinite alternate;
+#p1_right,
+#p3_right,
+#hand {
+  animation: wave 2s infinite alternate;
 }
-#p1_left
-{
-    animation: wave2 2s infinite alternate-reverse;
+#p1_left {
+  animation: wave2 2s infinite alternate-reverse;
 }
-#p1_mouth,#p2_mouth,#mouth1
-{
-    animation: mouth 2s infinite alternate;
+#p1_mouth,
+#p2_mouth,
+#mouth1 {
+  animation: mouth 2s infinite alternate;
 }
-#p1_eye,#p3_mouth,#mouth2
-{
-    animation:eye 2s infinite alternate;
+#p1_eye,
+#p3_mouth,
+#mouth2 {
+  animation: eye 2s infinite alternate;
 }
-#p2_eye
-{
-    animation:eye2 2s infinite alternate;
-    transform-box: fill-box;
+#p2_eye {
+  animation: eye2 2s infinite alternate;
+  transform-box: fill-box;
 }
-#flower1,#flower2
-{
-    animation:plant 5s infinite alternate ease;
-    transform-box: fill-box;
-    transform-origin: center; 
+#flower1,
+#flower2 {
+  animation: plant 5s infinite alternate ease;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 /* 1st section */
 
 /* 2nd section */
-.mar
-{
-    padding-top: 9%;
-    padding-bottom: 4%;
+.mar {
+  padding-top: 9%;
+  padding-bottom: 4%;
 }
-.space
-{
-    padding-top: 5%;
-    padding-bottom: 5%;
+.space {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-.rounded
-{
-    width: 80%;
-    transition: 1s;
+.rounded {
+  width: 80%;
+  transition: 1s;
 }
-.rounded:hover
-{
-    box-shadow: 0 0 10px 2px gray ;
+.rounded:hover {
+  box-shadow: 0 0 10px 2px gray;
 }
-.skill-bar
-{
-    height: 30px;
-    width: 100%;
-    background-color: #e9ecef;
-    border-radius: 4px;
+.skill-bar {
+  height: 30px;
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 4px;
 }
-.skill-per
-{
-    width: 0%;
-    height: 30px;
-    border-radius: 4px;
-    background-color: black;
-    position: relative;
-    color: white;
-    font-size: small;
-    text-align: center;
-    line-height: 30px;
+.skill-per {
+  width: 0%;
+  height: 30px;
+  border-radius: 4px;
+  background-color: black;
+  position: relative;
+  color: white;
+  font-size: small;
+  text-align: center;
+  line-height: 30px;
 }
-.skill-per:hover
-{
-    box-shadow: 0 0 0px 2px gray;
-    font-weight: 500;
+.skill-per:hover {
+  box-shadow: 0 0 0px 2px gray;
+  font-weight: 500;
 }
 
-.contact-card
-{
-    background-color: rgba(128, 128, 128,0.01);
-    color: black;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
-    text-align: center;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    border-radius: 10px;
-    padding: 10%;
-    backdrop-filter: blur(10px);
-    transition: 0.5s;
+.contact-card {
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  border-radius: 10px;
+  padding: 10%;
+  transition: 2s;
 }
-.contact-card a{
-    color: black;
-    text-decoration: none;
-    font-size: 190%;
+.contact-card a {
+  color: black;
+  text-decoration: none;
+  font-size: 190%;
 }
 
-.contact-card:hover
-{
-    box-shadow: inset 0 0 15px 5px rgba(128, 128, 128,0.16);
+.contact-card:hover {
+  box-shadow: 0 0 5px 2px gray;
 }
 
 /* 2nd section */
 
-#edu_svg
-{
-    width: 100%;
-    align-items: center;
-    align-content: center;
-    text-align: center;
+#edu_svg {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
-#edu_svg svg
-{
-    
-    width: 50%;
+#edu_svg svg {
+  width: 50%;
 }
 
-.tab-header
-{
-    background-color: black;
-    color: whitesmoke;
-    border-radius: 4px;
-    padding: 3px 0 3px 7px;
+.tab-header {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 4px;
+  padding: 3px 0 3px 7px;
 }
-
-
 
 /* svg */
-.ss
-{
-    position: relative;
+.ss {
+  position: relative;
 }
-.svgn1
-{
-    position:relative;
-    z-index: 0;
-    overflow: hidden;
-    display: flex;
-    left: 3px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
+.svgn1 {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  left: 3px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
 }
-.svgn 
-{
-    position:absolute;
-    z-index: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    align-content: flex-end;
-    justify-content: flex-end;
-    right: 0;
-    top: 0px;
-    width: 100%;
-    height: 100%;
+.svgn {
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: flex-end;
+  right: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
 }
-.svgn svg{
-    
-    position: absolute;
-    animation: animateIn 3s;
-    top: -430px;
-    right: -380px;
-    width: 60rem;
-    height: 60rem;
-    opacity: 0.6;
-    overflow: hidden;
+.svgn svg {
+  position: absolute;
+  animation: animateIn 3s;
+  top: -430px;
+  right: -380px;
+  width: 60rem;
+  height: 60rem;
+  opacity: 0.6;
+  overflow: hidden;
 }
-#svgn1
+#svgn1 {
+  width: 100%;
+}
+.svgn2
 {
-    width: 100%;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
+.svgn2 svg{
+  position:absolute;
+  overflow: hidden;
+  top: 35%;
+  left: -370px;
+  opacity: 0.6;
+  width: 40rem;
+  height: 40rem;
 }
 
-.svgn svg path:nth-child(1)
-{
-    animation:  gg 2.5s infinite alternate ;
-    -webkit-animation: gg 2.5s infinite alternate ;
+.svgn svg path:nth-child(1),.svgn2 svg path:nth-child(1) {
+  animation: gg 2.5s infinite alternate;
+  -webkit-animation: gg 2.5s infinite alternate;
 }
-.svgn svg path:nth-child(2)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 200ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 200ms ;
+.svgn svg path:nth-child(2),.svgn2 svg path:nth-child(2) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 200ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 200ms;
 }
-.svgn svg path:nth-child(3)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 400ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 400ms ;
+.svgn svg path:nth-child(3),.svgn2 svg path:nth-child(3) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 400ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 400ms;
 }
-.svgn svg path:nth-child(4)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 600ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 600ms ;
+.svgn svg path:nth-child(4),.svgn2 svg path:nth-child(4) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 600ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 600ms;
 }
-.svgn svg path:nth-child(5)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 800ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 800ms ;
+.svgn svg path:nth-child(5),.svgn2 svg path:nth-child(5) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 800ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 800ms;
 }
-.svgn svg path:nth-child(6)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 1000ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 1000ms ;
+.svgn svg path:nth-child(6),.svgn2 svg path:nth-child(6) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 1000ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 1000ms;
 }
-.svgn svg path:nth-child(7)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 1000ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 1000ms ;
+.svgn svg path:nth-child(7),.svgn2 svg path:nth-child(7) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 1000ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 1000ms;
 }
-.svgn svg path:nth-child(8)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 1200ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 1200ms ;
+.svgn svg path:nth-child(8) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 1200ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 1200ms;
 }
-.svgn svg path:nth-child(9)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 1400ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 1400ms ;
+.svgn svg path:nth-child(9) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 1400ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 1400ms;
 }
-.svgn svg path:nth-child(10)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 1600ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 1600ms ;
+.svgn svg path:nth-child(10) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 1600ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 1600ms;
 }
-.svgn svg path:nth-child(11)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 1800ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 1800ms ;
+.svgn svg path:nth-child(11) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 1800ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 1800ms;
 }
-.svgn svg path:nth-child(12)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 2000ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 2000ms ;
+.svgn svg path:nth-child(12) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 2000ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 2000ms;
 }
-.svgn svg path:nth-child(13)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 2200ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 2200ms ;
+.svgn svg path:nth-child(13) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 2200ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 2200ms;
 }
-.svgn svg path:nth-child(14)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 2400ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 2400ms ;
+.svgn svg path:nth-child(14) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 2400ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 2400ms;
 }
-.svgn svg path:nth-child(15)
-{
-    animation:  gg 2.5s infinite alternate ;
-    animation-delay: 2600ms;
-    -webkit-animation: gg 2.5s infinite alternate ;
-    -webkit-animation-delay: 2600ms ;
+.svgn svg path:nth-child(15) {
+  animation: gg 2.5s infinite alternate;
+  animation-delay: 2600ms;
+  -webkit-animation: gg 2.5s infinite alternate;
+  -webkit-animation-delay: 2600ms;
 }
 
-#name{
-    animation:fill 0.4s ease forwards 2s;
+#name {
+  animation: fill 0.4s ease forwards 2s;
 }
-#name path:nth-child(1)
-{
-    stroke-dasharray: 208.8270721435547px;
-    stroke-dashoffset: 208.8270721435547px;
-    animation: line-anim 2s ease forwards;
+#name path:nth-child(1) {
+  stroke-dasharray: 208.8270721435547px;
+  stroke-dashoffset: 208.8270721435547px;
+  animation: line-anim 2s ease forwards;
 }
-#name path:nth-child(2)
-{
-    stroke-dasharray: 184.31997680664062px;
-    stroke-dashoffset: 184.31997680664062px;
-    animation: line-anim 2s ease forwards 0.3s;
+#name path:nth-child(2) {
+  stroke-dasharray: 184.31997680664062px;
+  stroke-dashoffset: 184.31997680664062px;
+  animation: line-anim 2s ease forwards 0.3s;
 }
-#name path:nth-child(3)
-{
-    stroke-dasharray: 202.65029907226562px;
-    stroke-dashoffset: 202.65029907226562px ;
-    animation: line-anim 2s ease forwards 0.6s;
+#name path:nth-child(3) {
+  stroke-dasharray: 202.65029907226562px;
+  stroke-dashoffset: 202.65029907226562px;
+  animation: line-anim 2s ease forwards 0.6s;
 }
-#name path:nth-child(4)
-{
-    stroke-dasharray: 165.0831298828125px;
-    stroke-dashoffset: 165.0831298828125px ;
-    animation: line-anim 2s ease forwards 0.9s;
+#name path:nth-child(4) {
+  stroke-dasharray: 165.0831298828125px;
+  stroke-dashoffset: 165.0831298828125px;
+  animation: line-anim 2s ease forwards 0.9s;
 }
-#name path:nth-child(5)
-{
-    stroke-dasharray: 148px;
-    stroke-dashoffset: 148px;
-    animation: line-anim 2s ease forwards 1.2s;
+#name path:nth-child(5) {
+  stroke-dasharray: 148px;
+  stroke-dashoffset: 148px;
+  animation: line-anim 2s ease forwards 1.2s;
 }
 /* svg */
 
 /* Animation */
 
-@keyframes gg
-{
-    from
-    {
-        transform: scale(1,1) translate(0,0) rotateY(0);
-        -webkit-transform:scale(1,1) translate(0,0) rotateY(0) ;
-    }
-    to{
-        transform:scale(0.90,0.90) translate(2%,2%) rotateY(10deg);  
-        -webkit-transform:scale(0.90,0.90) translate(2%,2%) rotateY(10deg);
-    } 
+@keyframes gg {
+  from {
+    transform: scale(1, 1) translate(0, 0) rotateY(0);
+    -webkit-transform: scale(1, 1) translate(0, 0) rotateY(0);
+  }
+  to {
+    transform: scale(0.9, 0.9) translate(2%, 2%) rotateY(10deg);
+    -webkit-transform: scale(0.9, 0.9) translate(2%, 2%) rotateY(10deg);
+  }
 }
 @keyframes transitIn {
-   from
-   {
-        opacity: 0;
-        transform: translateY(5%);
-   }
-   to
-   {
-       opacity: 1;
-        transform: translateY(0);
-   }
+  from {
+    opacity: 0;
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@keyframes animateIn
-{
-    from
-    {
-         opacity: 0;
-         transform: scale(0.5,0.5);
-    }
-    to
-    {
-        opacity: 0.5;
-         transform: scale(1,1);
-    }
- }
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  to {
+    opacity: 0.5;
+    transform: scale(1, 1);
+  }
+}
 
- @keyframes wave
- {
-    from
-    {
-        transform: rotateZ(0);
-    }
-    to
-    {
-        transform: rotateZ(-40deg);
-    }
- }
- @keyframes wave2
- {
-    from
-    {
-        transform: translateY(0);
-    }
-    to
-    {
-        transform: translateY(90%);
-    }
- }
- @keyframes mouth
- {
-     from{
-        transform: scale(1,1);
-     }
-     to{
-        transform: scale(1.2,1.2);
-     }
- }
- @keyframes eye
- {
-    from{
-        transform: rotateX(0);
-     }
-     to{
-        transform: rotateX(360deg);
-     }
- }
- @keyframes eye2
- {
-    from{
-        transform: rotateZ(0);
-     }
-     to{
-        transform: rotateZ(30deg);
-     }
- }
- @keyframes plant
- {
-    from{
-        transform: rotateZ(0) translate(0,0);
-     }
-     to{
-        transform: rotateZ(-7deg) translate(10%,-20%);
-     }
- }
- @keyframes line-anim {
-    to{
-        
-        stroke-dasharray: 0px;
-        stroke-dashoffset:0px;
-    }
+@keyframes wave {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(-40deg);
+  }
+}
+@keyframes wave2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(90%);
+  }
+}
+@keyframes mouth {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.2, 1.2);
+  }
+}
+@keyframes eye {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes eye2 {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(30deg);
+  }
+}
+@keyframes plant {
+  from {
+    transform: rotateZ(0) translate(0, 0);
+  }
+  to {
+    transform: rotateZ(-7deg) translate(10%, -20%);
+  }
+}
+@keyframes line-anim {
+  to {
+    stroke-dasharray: 0px;
+    stroke-dashoffset: 0px;
+  }
 }
 @keyframes fill {
-    to{
-        fill: black;
-    }
+  to {
+    fill: black;
+  }
 }
 
-
 /* Animation */
-
