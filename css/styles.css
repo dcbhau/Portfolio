@@ -379,31 +379,37 @@ footer {
 
 #name {
   animation: fill 0.4s ease forwards 2s; 
+  -webkit-animation: fill 0.4s ease forwards 2s ;
 }
 #name path:nth-child(1) {
   stroke-dasharray: 208.8270721435547px;
   stroke-dashoffset: 208.8270721435547px;
   animation: line-anim 2s ease forwards;
+  -webkit-animation:line-anim 2s ease forwards ;
 }
 #name path:nth-child(2) {
   stroke-dasharray: 184.31997680664062px;
   stroke-dashoffset: 184.31997680664062px;
   animation: line-anim 2s ease forwards 300ms;
+  -webkit-animation:line-anim 2s ease forwards 300ms;
 }
 #name path:nth-child(3) {
   stroke-dasharray: 202.65029907226562px;
   stroke-dashoffset: 202.65029907226562px;
   animation: line-anim 2s ease forwards 600ms;
+  -webkit-animation:line-anim 2s ease forwards 600ms;
 }
 #name path:nth-child(4) {
   stroke-dasharray: 165.0831298828125px;
   stroke-dashoffset: 165.0831298828125px;
   animation: line-anim 2s ease forwards 900ms;
+  -webkit-animation:line-anim 2s ease forwards 900ms;
 }
 #name path:nth-child(5) {
   stroke-dasharray: 148px;
   stroke-dashoffset: 148px;
   animation: line-anim 2s ease forwards 1200ms;
+  -webkit-animation:line-anim 2s ease forwards 1200ms;
 }
 /* svg */
 
