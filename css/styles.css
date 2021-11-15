@@ -1,9 +1,7 @@
 html{
   scroll-behavior: smooth;
-
 }
 body {
-  animation: 0.75s transitIn;
   overflow-x: hidden;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -138,18 +136,13 @@ footer {
 #p1_eye,
 #p3_mouth,
 #mouth2 {
-  animation: eye 2s infinite alternate;
+  animation: eye 2s infinite alternate ;
 }
 #p2_eye {
-  animation: eye2 2s infinite alternate;
+  animation: eye2 2s infinite alternate ;
   transform-box: fill-box;
 }
-#flower1,
-#flower2 {
-  animation: plant 5s infinite alternate ease;
-  transform-box: fill-box;
-  transform-origin: center;
-}
+
 
 /* 1st section */
 
@@ -157,6 +150,11 @@ footer {
 .mar {
   padding-top: 9%;
   padding-bottom: 4%;
+}
+.mar1
+{
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 .space {
   padding-top: 5%;
@@ -380,7 +378,7 @@ footer {
 }
 
 #name {
-  animation: fill 0.4s ease forwards 2s;
+  animation: fill 0.4s ease forwards 2s; 
 }
 #name path:nth-child(1) {
   stroke-dasharray: 208.8270721435547px;
@@ -390,22 +388,22 @@ footer {
 #name path:nth-child(2) {
   stroke-dasharray: 184.31997680664062px;
   stroke-dashoffset: 184.31997680664062px;
-  animation: line-anim 2s ease forwards 0.3s;
+  animation: line-anim 2s ease forwards 300ms;
 }
 #name path:nth-child(3) {
   stroke-dasharray: 202.65029907226562px;
   stroke-dashoffset: 202.65029907226562px;
-  animation: line-anim 2s ease forwards 0.6s;
+  animation: line-anim 2s ease forwards 600ms;
 }
 #name path:nth-child(4) {
   stroke-dasharray: 165.0831298828125px;
   stroke-dashoffset: 165.0831298828125px;
-  animation: line-anim 2s ease forwards 0.9s;
+  animation: line-anim 2s ease forwards 900ms;
 }
 #name path:nth-child(5) {
   stroke-dasharray: 148px;
   stroke-dashoffset: 148px;
-  animation: line-anim 2s ease forwards 1.2s;
+  animation: line-anim 2s ease forwards 1200ms;
 }
 /* svg */
 
@@ -482,14 +480,7 @@ footer {
     transform: rotateZ(30deg);
   }
 }
-@keyframes plant {
-  from {
-    transform: rotateZ(0) translate(0, 0);
-  }
-  to {
-    transform: rotateZ(-7deg) translate(10%, -20%);
-  }
-}
+
 @keyframes line-anim {
   to {
     stroke-dasharray: 0px;
@@ -503,3 +494,30 @@ footer {
 }
 
 /* Animation */
+
+@media (max-width:992px)
+{
+  .svgn svg, .svgn2 svg{
+    display: none;
+  }
+  #edu_svg svg {
+    width: 100%;
+  }
+  #img img
+  {
+    margin-left: auto;
+    margin-right: auto;
+    display:block ;
+  }
+  .rounded
+  {
+    width: 80%;
+  }
+  .mar1
+  {
+    padding-top: 25%;
+  }
+ 
+ 
+  
+}
