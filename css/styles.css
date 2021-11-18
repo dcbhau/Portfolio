@@ -189,6 +189,10 @@ footer {
   font-weight: 500;
 }
 
+.contact,.contact:hover{
+  text-decoration: none;
+  color: black;
+}
 .contact-card {
   vertical-align: middle;
   text-align: center;
@@ -198,12 +202,12 @@ footer {
   padding: 10%;
   transition: 2s;
 }
-.contact-card a {
+
+.contact-card i {
   color: black;
   text-decoration: none;
-  font-size: 190%;
+  font-size: 200%;
 }
-
 .contact-card:hover {
   box-shadow: 0 0 5px 2px gray;
 }
@@ -522,6 +526,11 @@ footer {
   .mar1
   {
     padding-top: 25%;
+  }
+  .contact-card
+  {
+    margin-top:4%;
+    margin-bottom: 4%;
   }
   
 }
